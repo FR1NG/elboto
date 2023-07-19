@@ -57,6 +57,13 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
+
+
+
+// listning to github webhooks
+app.post('/githook', (req, res) => {
+    console.log(req);
+})
 app.listen(PORT, () => {
   console.log('Listening on port', PORT);
 });
